@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reminder Popup</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      #hydrateImage {
+        width: 100px;
+        margin: 5px;
+      }
+
+      button {
+        margin: 5px;
+        outline: none;
+      }
+
+      button:hover {
+        outline: #80deea dotted thick;
+      }
+
+      .aligned {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./wordle_icon.png" id="hydrateImage" /><br>
+    <input type="time" id="alarmTime"/>
+    <button id="startAlarm">Set Hour</button><br>
+    <button id="cancelAlarm">Cancel Alarm</button><br>
+    <input type="text" id="urlinput"><br>
+    <button id="addUrl" value="1">Add URL</button><br>
+    <div id="urlList"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "Puzzle Reminder Popup",
+  "description": "Set a daily reminder to complete puzzle games",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["alarms", "notifications", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Puzzle Reminder",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "wordle16.png",
+    "32": "wordle32.png",
+    "48": "wordle48.png",
+    "128": "wordle128.png"
+  }
+}
